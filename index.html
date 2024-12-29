@@ -1,0 +1,1202 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+   </body>
+</html><htmlCode>
+<div id="root">
+  <header id="Header" class="fixed w-full top-0 z-50 bg-white shadow-md">
+    <nav class="container mx-auto px-4 py-2">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="/" class="flex items-center">
+            <img src="https://www.tbo.com/img/logo_newyear25.gif" alt="TBO.com Logo" class="h-12 w-auto">
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:flex items-center space-x-8">
+          <a href="#products" class="text-gray-700 hover:text-[#f26b25] transition-colors">Products</a>
+          <a href="#solutions" class="text-gray-700 hover:text-[#f26b25] transition-colors">Solutions</a>
+          <a href="#about" class="text-gray-700 hover:text-[#f26b25] transition-colors">About Us</a>
+          <a href="#careers" class="text-gray-700 hover:text-[#f26b25] transition-colors">Careers</a>
+        </div>
+
+        <!-- Auth Buttons -->
+        <div class="hidden lg:flex items-center space-x-4">
+          <button class="px-4 py-2 text-gray-700 hover:text-[#f26b25] transition-colors">
+            Sign In
+          </button>
+          <button class="px-6 py-2 bg-[#f26b25] text-white rounded-full hover:bg-[#e25b15] transition-colors">
+            Register Now
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden">
+          <button class="p-2 text-gray-700 hover:text-[#f26b25]" x-data @click="$store.mobileMenu.toggle()">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="lg:hidden" x-data="{ open: false }" x-show="open" @click.away="open = false">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a href="#products" class="block px-3 py-2 text-gray-700 hover:text-[#f26b25]">Products</a>
+          <a href="#solutions" class="block px-3 py-2 text-gray-700 hover:text-[#f26b25]">Solutions</a>
+          <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-[#f26b25]">About Us</a>
+          <a href="#careers" class="block px-3 py-2 text-gray-700 hover:text-[#f26b25]">Careers</a>
+          <div class="pt-4 flex flex-col space-y-2">
+            <button class="px-4 py-2 text-gray-700 hover:text-[#f26b25]">Sign In</button>
+            <button class="px-6 py-2 bg-[#f26b25] text-white rounded-full hover:bg-[#e25b15]">Register Now</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <section id="Hero" class="relative min-h-screen pt-20 bg-gradient-to-b from-white to-gray-50">
+    <div class="container mx-auto px-4 py-16">
+      <div class="flex flex-col lg:flex-row items-center justify-between">
+        <!-- Left Content -->
+        <div class="lg:w-1/2 space-y-8 text-center lg:text-left">
+          <h1 class="text-4xl lg:text-6xl font-bold text-gray-900">
+            Simplifying Travel
+            <span class="block text-[#f26b25]">Enabling Growth</span>
+          </h1>
+          <p class="text-lg text-gray-600 max-w-xl">
+            We are one of the leading global travel distribution platforms, simplifying the travel business for both suppliers and buyers across 100+ countries.
+          </p>
+          <!-- Search Component -->
+          <div class="relative mt-8 max-w-2xl mx-auto lg:mx-0">
+            <div class="flex items-center gap-2 p-2 bg-white rounded-full shadow-lg">
+              <button class="p-2 hover:bg-gray-100 rounded-full" title="Voice Search">
+                <svg class="w-6 h-6 text-[#f26b25]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+                </svg>
+              </button>
+              <input type="text" placeholder="Search destinations, hotels, or activities..." class="flex-1 py-3 px-4 outline-none">
+              <button class="p-2 hover:bg-gray-100 rounded-full" title="Image Search">
+                <svg class="w-6 h-6 text-[#f26b25]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+              </button>
+              <button class="bg-[#f26b25] text-white px-6 py-3 rounded-full hover:bg-[#e25b15] transition-colors">
+                Search
+              </button>
+            </div>
+          </div>
+          <!-- Stats -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-[#f26b25]">159K+</div>
+              <div class="text-gray-600">Travel buyers</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-[#f26b25]">1M+</div>
+              <div class="text-gray-600">Hotels worldwide</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-[#f26b25]">100+</div>
+              <div class="text-gray-600">Countries</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-[#f26b25]">55+</div>
+              <div class="text-gray-600">Currencies</div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Content - Video -->
+        <div class="lg:w-1/2 mt-12 lg:mt-0">
+          <div class="relative rounded-lg overflow-hidden shadow-xl">
+            <video autoplay loop muted class="w-full h-full object-cover">
+              <source src="https://www.tbo.com/img/videos/tbo.com.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background Decorative Elements -->
+    <div class="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-gray-50 to-transparent"></div>
+  </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <section id="SearchHub" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Find Your Perfect Travel Experience</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Search through our extensive database of hotels, packages, transfers, and more using text, voice, or image search.</p>
+      </div>
+
+      <!-- Search Tabs -->
+      <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden" x-data="{ tab: 'hotels' }">
+        <!-- Tab Navigation -->
+        <div class="flex border-b">
+          <button @click="tab = 'hotels'" :class="{ 'border-[#f26b25] text-[#f26b25]': tab === 'hotels' }" class="flex-1 py-4 px-6 text-center border-b-2 font-medium hover:text-[#f26b25] transition-colors">
+            Hotels
+          </button>
+          <button @click="tab = 'packages'" :class="{ 'border-[#f26b25] text-[#f26b25]': tab === 'packages' }" class="flex-1 py-4 px-6 text-center border-b-2 font-medium hover:text-[#f26b25] transition-colors">
+            Packages
+          </button>
+          <button @click="tab = 'transfers'" :class="{ 'border-[#f26b25] text-[#f26b25]': tab === 'transfers' }" class="flex-1 py-4 px-6 text-center border-b-2 font-medium hover:text-[#f26b25] transition-colors">
+            Transfers
+          </button>
+          <button @click="tab = 'activities'" :class="{ 'border-[#f26b25] text-[#f26b25]': tab === 'activities' }" class="flex-1 py-4 px-6 text-center border-b-2 font-medium hover:text-[#f26b25] transition-colors">
+            Activities
+          </button>
+        </div>
+
+        <!-- Search Interface -->
+        <div class="p-6">
+          <!-- Search Input Area -->
+          <div class="flex flex-wrap gap-4 mb-6">
+            <div class="flex-1 min-w-[300px]">
+              <input type="text" placeholder="Where do you want to go?" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#f26b25] focus:ring-1 focus:ring-[#f26b25] outline-none">
+            </div>
+            <div class="flex-1 min-w-[300px]">
+              <input type="date" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#f26b25] focus:ring-1 focus:ring-[#f26b25] outline-none">
+            </div>
+            <div class="flex-1 min-w-[300px]">
+              <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#f26b25] focus:ring-1 focus:ring-[#f26b25] outline-none">
+                <option value="">Number of guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4+ Guests</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Alternative Search Methods -->
+          <div class="flex flex-wrap gap-4 mb-6">
+            <button class="flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 hover:border-[#f26b25] hover:text-[#f26b25] transition-colors">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+              </svg>
+              Voice Search
+            </button>
+            <button class="flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 hover:border-[#f26b25] hover:text-[#f26b25] transition-colors">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              Image Search
+            </button>
+            <button class="flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 hover:border-[#f26b25] hover:text-[#f26b25] transition-colors">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+              </svg>
+              AI Assistant
+            </button>
+          </div>
+
+          <!-- Search Button -->
+          <button class="w-full bg-[#f26b25] text-white py-4 rounded-lg hover:bg-[#e25b15] transition-colors font-medium">
+            Search Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+        <button class="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-left">
+          <h3 class="font-medium text-gray-900">Popular Hotels</h3>
+          <p class="text-sm text-gray-600">Discover top-rated stays</p>
+        </button>
+        <button class="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-left">
+          <h3 class="font-medium text-gray-900">Best Packages</h3>
+          <p class="text-sm text-gray-600">Complete travel deals</p>
+        </button>
+        <button class="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-left">
+          <h3 class="font-medium text-gray-900">Airport Transfers</h3>
+          <p class="text-sm text-gray-600">Reliable transportation</p>
+        </button>
+        <button class="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-left">
+          <h3 class="font-medium text-gray-900">Local Activities</h3>
+          <p class="text-sm text-gray-600">Explore experiences</p>
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <section id="PopularDestinations" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Popular Destinations</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Explore our most sought-after travel destinations with exclusive deals and packages</p>
+      </div>
+
+      <!-- Destinations Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Destination Card 1 -->
+        <div class="group rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+          <div class="relative h-64">
+            <img src="https://www.tbo.com/img/products.jpg" alt="Luxury Hotels" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <h3 class="text-xl font-bold mb-1">Luxury Hotels</h3>
+              <p class="text-sm">Starting from $199/night</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination Card 2 -->
+        <div class="group rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+          <div class="relative h-64">
+            <img src="https://www.tbo.com/img/solutions.jpg" alt="Travel Packages" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <h3 class="text-xl font-bold mb-1">Travel Packages</h3>
+              <p class="text-sm">Complete travel solutions</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination Card 3 -->
+        <div class="group rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+          <div class="relative h-64">
+            <img src="https://www.tbo.com/img/aboutnav-img.jpg" alt="Exclusive Experiences" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <h3 class="text-xl font-bold mb-1">Exclusive Experiences</h3>
+              <p class="text-sm">Unforgettable moments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories Tabs -->
+      <div class="mt-12 max-w-4xl mx-auto">
+        <div class="flex flex-wrap justify-center gap-4">
+          <button class="px-6 py-2 rounded-full bg-[#f26b25] text-white hover:bg-[#e25b15] transition-colors">
+            All Destinations
+          </button>
+          <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors">
+            Popular Hotels
+          </button>
+          <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors">
+            Trending Packages
+          </button>
+          <button class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors">
+            Special Offers
+          </button>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="mt-12 text-center">
+        <button class="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-[#f26b25] text-white hover:bg-[#e25b15] transition-colors">
+          View All Destinations
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <section id="TravelServices" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Comprehensive Travel Services</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Everything you need for a perfect travel experience, all in one place</p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Hotels Service -->
+        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <div class="relative mb-6 h-48 rounded-lg overflow-hidden">
+            <img src="https://www.tbo.com/img/travelpreneurs.jpg" alt="Hotels" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Hotels</h3>
+          <p class="text-gray-600 mb-4">Access to 1M+ hotels worldwide with competitive rates and exclusive deals.</p>
+          <a href="#" class="text-[#f26b25] font-medium hover:text-[#e25b15] inline-flex items-center">
+            Learn More
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Packages Service -->
+        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <div class="relative mb-6 h-48 rounded-lg overflow-hidden">
+            <img src="https://www.tbo.com/img/travelbuyers.jpg" alt="Packages" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Holiday Packages</h3>
+          <p class="text-gray-600 mb-4">Curated holiday packages including flights, hotels, and activities.</p>
+          <a href="#" class="text-[#f26b25] font-medium hover:text-[#e25b15] inline-flex items-center">
+            Learn More
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Transfers Service -->
+        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <div class="relative mb-6 h-48 rounded-lg overflow-hidden">
+            <img src="https://www.tbo.com/img/travelsuppliers.jpg" alt="Transfers" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Transfers</h3>
+          <p class="text-gray-600 mb-4">Reliable airport transfers and ground transportation services.</p>
+          <a href="#" class="text-[#f26b25] font-medium hover:text-[#e25b15] inline-flex items-center">
+            Learn More
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Partner Logos -->
+      <div class="mt-16">
+        <h3 class="text-center text-gray-700 mb-8">Trusted by Leading Travel Brands</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center">
+          <img src="https://www.tbo.com/img/logos/singaporeairlines-min.png" alt="Singapore Airlines" class="h-12 object-contain">
+          <img src="https://www.tbo.com/img/logos/hilton-min.png" alt="Hilton" class="h-12 object-contain">
+          <img src="https://www.tbo.com/img/logos/etihad-min.png" alt="Etihad" class="h-12 object-contain">
+          <img src="https://www.tbo.com/img/logos/pullman-min.png" alt="Pullman" class="h-12 object-contain">
+          <img src="https://www.tbo.com/img/logos/lufthansa-min.png" alt="Lufthansa" class="h-12 object-contain">
+          <img src="https://www.tbo.com/img/logos/expediagroup-min.png" alt="Expedia Group" class="h-12 object-contain">
+        </div>
+      </div>
+
+      <!-- Service Stats -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-[#f26b25] mb-2">55+</div>
+          <div class="text-gray-600">Supported Currencies</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-[#f26b25] mb-2">100+</div>
+          <div class="text-gray-600">Countries Served</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-[#f26b25] mb-2">24/7</div>
+          <div class="text-gray-600">Customer Support</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-[#f26b25] mb-2">159K+</div>
+          <div class="text-gray-600">Happy Customers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <section id="AISupport" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <!-- Left Content -->
+        <div class="lg:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">24/7 AI-Powered Travel Assistant</h2>
+          <p class="text-gray-600 mb-8">Get instant support and personalized travel recommendations with our advanced AI assistant. Ask questions, get trip suggestions, or resolve booking queries instantly.</p>
+          
+          <!-- AI Support Features -->
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="p-2 bg-[#f26b25]/10 rounded-lg">
+                <svg class="w-6 h-6 text-[#f26b25]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-900 mb-2">Multi-Modal Support</h3>
+                <p class="text-gray-600">Interact using text, voice, or images for a seamless support experience</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="p-2 bg-[#f26b25]/10 rounded-lg">
+                <svg class="w-6 h-6 text-[#f26b25]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-900 mb-2">Smart Recommendations</h3>
+                <p class="text-gray-600">Get personalized travel suggestions based on your preferences</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="p-2 bg-[#f26b25]/10 rounded-lg">
+                <svg class="w-6 h-6 text-[#f26b25]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-900 mb-2">Instant Responses</h3>
+                <p class="text-gray-600">Get immediate answers to your travel queries 24/7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content - AI Chat Interface -->
+        <div class="lg:w-1/2">
+          <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
+            <!-- Chat Header -->
+            <div class="bg-[#f26b25] p-4 text-white">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold">TBO AI Assistant</h4>
+                  <p class="text-sm text-white/80">Online | Ready to help</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat Interface -->
+            <div class="p-4 h-[400px] bg-gray-50 flex flex-col">
+              <!-- Input Area -->
+              <div class="mt-auto bg-white rounded-xl p-4 shadow-lg">
+                <div class="flex items-center gap-4">
+                  <button class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                    <svg class="w-6 h-6 text-[#f26b25]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+                    </svg>
+                  </button>
+                  <input type="text" placeholder="Ask me anything about travel..." class="flex-1 border-0 focus:ring-0 outline-none">
+                  <button class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                    <svg class="w-6 h-6 text-[#f26b25]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                  </button>
+                  <button class="bg-[#f26b25] text-white px-4 py-2 rounded-full hover:bg-[#e25b15] transition-colors">
+                    Send
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <section id="Testimonials" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Real experiences from travel professionals and agencies around the world</p>
+      </div>
+
+      <!-- Video Testimonials Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <!-- Video Testimonial 1 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+          <div class="aspect-video">
+            <video class="w-full h-full object-cover" controls>
+              <source src="https://www.tbo.com/img/testimonials/agent/Nichlas-John-Maratos.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="p-6">
+            <h3 class="font-bold text-gray-900">Nichlas John Maratos</h3>
+            <p class="text-[#f26b25]">Dusit Hotels & Resort</p>
+          </div>
+        </div>
+
+        <!-- Video Testimonial 2 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+          <div class="aspect-video">
+            <video class="w-full h-full object-cover" controls>
+              <source src="https://www.tbo.com/img/testimonials/agent/Sheena-Shroff.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="p-6">
+            <h3 class="font-bold text-gray-900">Sheena Shroff</h3>
+            <p class="text-[#f26b25]">Shroff Travel | Philippines</p>
+          </div>
+        </div>
+
+        <!-- Video Testimonial 3 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+          <div class="aspect-video">
+            <video class="w-full h-full object-cover" controls>
+              <source src="https://www.tbo.com/img/testimonials/agent/Stuart-Lee.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="p-6">
+            <h3 class="font-bold text-gray-900">Stuart Lee</h3>
+            <p class="text-[#f26b25]">Main Street Travel | U.K.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Awards Section -->
+      <div class="mt-16">
+        <h3 class="text-center text-xl font-bold text-gray-900 mb-8">Award-Winning Travel Platform</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+          <img src="https://www.tbo.com/img/awards/ac&m.jpg" alt="Award" class="w-32 h-32 object-contain">
+          <img src="https://www.tbo.com/img/awards/tdmaward.jpg" alt="Award" class="w-32 h-32 object-contain">
+          <img src="https://www.tbo.com/img/awards/ttm.jpg" alt="Award" class="w-32 h-32 object-contain">
+          <img src="https://www.tbo.com/img/awards/award01.jpg" alt="Award" class="w-32 h-32 object-contain">
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="mt-16 text-center">
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Ready to Transform Your Travel Business?</h3>
+          <p class="text-gray-600 mb-6">Join thousands of successful travel professionals who trust TBO</p>
+          <button class="bg-[#f26b25] text-white px-8 py-3 rounded-full hover:bg-[#e25b15] transition-colors">
+            Get Started Today
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <section id="TravelGuides" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Expert Travel Guides & Resources</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Access comprehensive travel information and professional resources to enhance your booking experience</p>
+      </div>
+
+      <!-- Guide Categories -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <!-- Hotels Guide -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+          <div class="relative h-48">
+            <img src="https://www.tbo.com/img/products.jpg" alt="Hotels Guide" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <h3 class="text-xl font-bold">Hotels Guide</h3>
+              <p class="text-sm">Tips for booking the best accommodations</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Travel Solutions -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+          <div class="relative h-48">
+            <img src="https://www.tbo.com/img/solutions.jpg" alt="Travel Solutions" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <h3 class="text-xl font-bold">Travel Solutions</h3>
+              <p class="text-sm">Complete travel management guides</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Business Travel -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+          <div class="relative h-48">
+            <img src="https://www.tbo.com/img/travelbuyers.jpg" alt="Business Travel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <h3 class="text-xl font-bold">Business Travel</h3>
+              <p class="text-sm">Corporate travel management resources</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Learning Resources -->
+      <div class="bg-gray-50 rounded-2xl p-8 mb-12">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="md:w-1/2">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">TBO Academy</h3>
+            <p class="text-gray-600 mb-6">Access free learning resources and professional development materials to enhance your travel business skills.</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="#" class="inline-flex items-center gap-2 px-6 py-3 bg-[#f26b25] text-white rounded-full hover:bg-[#e25b15] transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+                Access Courses
+              </a>
+              <a href="#" class="inline-flex items-center gap-2 px-6 py-3 border border-[#f26b25] text-[#f26b25] rounded-full hover:bg-[#f26b25] hover:text-white transition-colors">
+                Download Resources
+              </a>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <img src="https://www.tbo.com/img/brands/tboacademy-min.png" alt="TBO Academy" class="w-full max-w-md mx-auto">
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <a href="#" class="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <h4 class="font-semibold text-gray-900 mb-2">Booking Guidelines</h4>
+          <p class="text-sm text-gray-600">Step-by-step booking process</p>
+        </a>
+        <a href="#" class="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <h4 class="font-semibold text-gray-900 mb-2">API Documentation</h4>
+          <p class="text-sm text-gray-600">Technical integration guides</p>
+        </a>
+        <a href="#" class="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <h4 class="font-semibold text-gray-900 mb-2">Market Insights</h4>
+          <p class="text-sm text-gray-600">Travel industry trends</p>
+        </a>
+        <a href="#" class="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <h4 class="font-semibold text-gray-900 mb-2">Support Center</h4>
+          <p class="text-sm text-gray-600">24/7 customer assistance</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <section id="Newsletter" class="py-16 bg-[#f26b25]">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <!-- Left Content -->
+            <div class="space-y-6">
+              <h2 class="text-3xl font-bold text-gray-900">Stay Updated with Travel Insights</h2>
+              <p class="text-gray-600">Subscribe to our newsletter for exclusive travel deals, industry updates, and expert tips delivered straight to your inbox.</p>
+              
+              <!-- Features List -->
+              <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-[#f26b25]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-gray-700">Exclusive travel deals and promotions</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-[#f26b25]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-gray-700">Industry insights and market trends</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-[#f26b25]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-gray-700">Professional travel tips and guides</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Content - Subscription Form -->
+            <div class="space-y-6">
+              <form class="space-y-4">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                  <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#f26b25] focus:ring-1 focus:ring-[#f26b25] outline-none" placeholder="Enter your name">
+                </div>
+                
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                  <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#f26b25] focus:ring-1 focus:ring-[#f26b25] outline-none" placeholder="Enter your email">
+                </div>
+
+                <div>
+                  <label for="business" class="block text-sm font-medium text-gray-700 mb-1">Business Type</label>
+                  <select id="business" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#f26b25] focus:ring-1 focus:ring-[#f26b25] outline-none">
+                    <option value="">Select your business type</option>
+                    <option value="travel_agency">Travel Agency</option>
+                    <option value="tour_operator">Tour Operator</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="flex items-start gap-2">
+                  <input type="checkbox" id="consent" class="mt-1">
+                  <label for="consent" class="text-sm text-gray-600">I agree to receive marketing communications from TBO. You can unsubscribe at any time.</label>
+                </div>
+
+                <button type="submit" class="w-full bg-[#f26b25] text-white py-3 rounded-lg hover:bg-[#e25b15] transition-colors">
+                  Subscribe Now
+                </button>
+              </form>
+
+              <p class="text-sm text-gray-500 text-center">
+                By subscribing, you agree to our 
+                <a href="#" class="text-[#f26b25] hover:underline">Terms & Conditions</a> and 
+                <a href="#" class="text-[#f26b25] hover:underline">Privacy Policy</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+  <footer id="Footer" class="bg-gray-900 text-gray-300">
+    <div class="container mx-auto px-4">
+      <!-- Main Footer Content -->
+      <div class="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Company Info -->
+        <div class="space-y-6">
+          <img src="https://www.tbo.com/img/logo_newyear25.gif" alt="TBO.com Logo" class="h-12">
+          <p class="text-sm">Leading global travel distribution platform connecting travel buyers with suppliers across 100+ countries.</p>
+          <div class="space-y-2">
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span class="text-sm">Global Headquarters</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <span class="text-sm">support@tbo.com</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-white font-semibold mb-6">Quick Links</h3>
+          <ul class="space-y-4">
+            <li><a href="#" class="hover:text-[#f26b25] transition-colors">About Us</a></li>
+            <li><a href="#" class="hover:text-[#f26b25] transition-colors">Careers</a></li>
+            <li><a href="#" class="hover:text-[#f26b25] transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-[#f26b25] transition-colors">Terms and Conditions</a></li>
+            <li><a href="#" class="hover:text-[#f26b25] transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <h3 class="text-white font-semibold mb-6">Our Products</h3>
+          <ul class="space-y-4">
+            <li><a href="#" class="hover:text-[#f26b25] transition-colors">Hotels</a></li>
+            <li><a href="#" class="hover:text-[#f26b25] transition-colors">Packages</a></li>
+            <li><a href="#" class="hover:text-[#f26b25] transition-colors">Transfers</a></li>
+            <li><a href="#" class="hover:text-[#f26b25] transition-colors">Rail Europe</a></li>
+            <li><a href="#" class="hover:text-[#f26b25] transition-colors">Insurance</a></li>
+          </ul>
+        </div>
+
+        <!-- Download App -->
+        <div>
+          <h3 class="text-white font-semibold mb-6">Download Our App</h3>
+          <div class="space-y-4">
+            <button class="w-full bg-white text-gray-900 px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center gap-2">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.928 19.443c-.238.629-.532 1.218-.878 1.768l-1.317-.634c.314-.5.576-1.034.789-1.601l1.406.467zM9.869 21.253l-1.317.634a11.953 11.953 0 01-.878-1.768l1.406-.467c.213.567.475 1.101.789 1.601zM12 2.25c2.69 0 5.166.952 7.096 2.539l-.642 1.281A9.97 9.97 0 0012 4.25a9.97 9.97 0 00-6.454 1.82l-.642-1.281A11.97 11.97 0 0112 2.25z"></path>
+              </svg>
+              App Store
+            </button>
+            <button class="w-full bg-white text-gray-900 px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center gap-2">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3.5 3.75a.75.75 0 00-1.5 0v16.5a.75.75 0 001.5 0V3.75zM5 1.75C5 .784 5.784 0 6.75 0h10.5C18.216 0 19 .784 19 1.75v20.5A1.75 1.75 0 0117.25 24H6.75A1.75 1.75 0 015 22.25V1.75z"></path>
+              </svg>
+              Play Store
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="py-6 border-t border-gray-800">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div class="text-sm">
+            © 2024 TBO.com. All rights reserved.
+          </div>
+          <div class="flex items-center gap-6">
+            <a href="#" class="hover:text-[#f26b25] transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="#" class="hover:text-[#f26b25] transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </a>
+            <a href="#" class="hover:text-[#f26b25] transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</htmlCode>
